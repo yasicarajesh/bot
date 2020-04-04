@@ -1,0 +1,73 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node {
+    int data;
+    struct node *next;
+    struct node *prev; 
+};
+struct node* clockwise(struct node *src,struct node *last,int){
+  if(n>0){
+     struct node* temp;
+     temp=last->prev;
+     last->prev=NULL;
+     temp->next=NULL;
+     last->next=src;
+     src->prev=last;
+     temp=last;
+     last=src;
+     return clockwise(temp,last,n-1);
+}
+else
+{
+      return src;
+}
+struct node* createNode(int data) {
+    struct node *temp;
+    temp = malloc(sizeof(struct node));
+    temp->data = data;
+    temp->next = NULL;
+    temp->prev = NULL;
+    return temp;
+}
+
+void printNodes(struct node *p) {
+    while(p != NULL) {
+        printf("%d\n", p->data);
+        p=p->next;
+    }
+}
+
+
+
+
+
+
+
+int main() {
+    struct node *p, *q;
+    int n, value, pos;
+    scanf("%d", &n);
+
+    //Creating first node outside the loop.
+    scanf("%d", &value);
+    p = createNode(value);
+
+    //Assigning first node to q so the after p moves to the last node while creation, q will be the starting node.
+    q=p;
+
+    //Creating remaining nodes
+    for(int i=1;i<n;i++) {
+       scanf("%d", &value);
+       p->next = createNode(value);
+       p->next->prev = p;
+       p=p->next;
+    }
+    p=q;
+    printNodes(p);
+    
+    
+
+    return 0;
+}
+

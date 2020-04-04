@@ -1,0 +1,23 @@
+void reverse(struct node *source, struct node *dest) {
+    if(source->next != NULL) {
+        struct node *initial;
+        initial = source;
+        while(source->next->next != NULL) {
+            source = source -> next;
+        }
+        dest->next = source;
+        source->next = NULL;
+        reverse(initial, dest->next);
+    }
+}
+struct node* traverseLastNode(struct node *traverseNode) {
+    while(traverseNode->next != NULL) {
+    traverseNode = traverseNode -> next;
+ {
+
+    return traverseNode;
+}
+p=q;
+new = traverseLastNode(p);
+    reverse(p, new);
+    p=q=new;

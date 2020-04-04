@@ -1,0 +1,49 @@
+1.What is byzantine fault.  Explain it with simple example
+
+Byzantine Fault Tolerance (BFT) is one of the most difficult challenges faced by the Block chain technology.
+All the participants of the cryptocurrency network need to agree, or give consensus regularly about the current state of the block chain.
+At least (2/3) two thirds or more reliable and honest nodes in the network make it a reliable network. 
+If more than half of the nodes act maliciously, then the system has to face the 51% attack, which is discussed in a separate article.
+The concept of Byzantine Fault Tolerance in a cryptocurrency is the feature of reaching an agreement or consensus about particular blocks based on the proof of 
+work, even when some nodes are failing to respond or giving out malicious values to misguide the network. The main objective of BFT is to safeguard 
+the system even when there are some faulty nodes. This will also help to reduce the influence of faulty nodes.
+
+EXAMPLE:
+
+Byzantine Generals’ Problem:
+
+Imagine that several divisions of the Byzantine army are camped outside an enemy city, each division commanded by its own general.
+The generals can communicate with one another only by messenger. After observing the enemy, they must decide upon a common plan of action. However,
+some of the generals may be traitors, trying to prevent the loyal generals from reaching an agreement. The generals must decide on when to attack the city,
+but they need a strong majority of their army to attack at the same time.
+The generals must have an algorithm to guarantee that (a) all loyal generals decide upon the same plan of action, and (b) a small number of traitors cannot cause
+the loyal generals to adopt a bad plan. The loyal generals will all do what the algorithm says they should, but the traitors may do anything they wish.
+The algorithm must guarantee condition (a) regardless of what the traitors do. The loyal generals should not only reach agreement, but should agree upon a 
+reasonable plan.
+
+Byzantine fault tolerance can be achieved if the correctly working nodes in the network reach an agreement on their values. There can be a default vote value 
+given to missing messages i.e., we can assume that the message from a particular node is ‘faulty’ if the message is not received within a certain time limit. 
+Furthermore, we can also assign a default response if the majority of nodes respond with a correct value.
+Leslie Lamport proved that if we have 3m+1 correctly working processors, a consensus(agreement on same state) can be reached if atmost m processors are faulty 
+which means that strictly more than two-thirds of the total number of processors should be honest.
+
+2)List the various assumptions made to develop consensus algorithm:
+ 
+The Exonum consensus algorithm assumes that the consensus participants can be identified. Thus, the algorithm fits permissioned blockchains, which Exonum is oriented 
+towards, rather than permissionless ones.
+Not all the nodes in the blockchain network may be actively involved in the consensus algorithm. Rather, there is a special role for active consensus participants 
+– validators or validator nodes.
+For example, in a consortium blockchain validators could be controlled by the companies participating in the consortium.
+
+The consensus algorithm must operate in the presence of faults, i.e., when participants in the network may behave abnormally.
+The Exonum consensus algorithm assumes the worst; it operates under the assumption that any individual node or even a group of nodes in the blockchain
+network can crash or be compromised by a resourceful adversary (say, a hacker or a corrupt administrator).
+This threat model is known in computer science as Byzantine faults; correspondingly, the Exonum consensus algorithm is Byzantine fault tolerant (BFT).
+
+From the computer science perspective, the Exonum consensus algorithm takes usual assumptions:
+
+Validator nodes are assumed to be partially synchronous, i.e., their computation performances do not differ much The network is partially synchronous, too.
+That is, all messages are delivered in the finite time which, however, is unknown in advance
+Each validator has access to a local stopwatch to determine time intervals. On the other hand, there is no global synchronized time in the system
+Validators can be identified with the public-key cryptography; correspondingly, the communication among validators is authenticated
+The same assumptions are used in PBFT (the most well-known BFT consensus) and its successors.

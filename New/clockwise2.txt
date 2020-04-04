@@ -1,0 +1,10 @@
+INPUT:10 20 30 40 50
+OUTPUT:50 10 20 30 40
+   N=1
+temp=last->prev
+last->prev=NULL
+temp->next=NULL
+last->next=src;
+src->prev=last;
+last=src;
+temp=last;	
