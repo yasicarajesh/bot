@@ -62,22 +62,26 @@ class Service extends React.Component{
          <div class="work">
              <div class="work1">How we work</div>
              <div class="work2">small teams working on big challenges in honest collabration with our clients.</div>
-             <div class="work3">
-                 <div class="work4">small teams</div>
-                 <div class="work5"><img src="assets/img/work1.png"/></div>
-                 <div class="work6">
-                     <div class="work7">Interdisciplinary teams with big ideas.</div>
-                     <div class="work8">design and prototyping from day one.</div>
-                 </div>
+             <div class="work3-wrapper">
+              <div class="work3">
+                  <div class="work4">small teams</div>
+                  <div class="work5"><img src="assets/img/work1.png"/></div>
+                  <div class="work6">
+                      <div class="work7">Interdisciplinary teams with big ideas.</div>
+                      <div class="work8">design and prototyping from day one.</div>
+                  </div>
+              </div>
              </div>
              <hr></hr>
-             <div class="work9">
-                 <div class="work10">client as a partner</div>
-                 <div class="work11"><img src="assets/img/work2.png"/></div>
-                 <div class="work12">
-                     <div class="work13">clients join the team to help us truly understand their business.</div>
-                     <div class="work14">putting users first transforms client organizations and we work together.</div>
-                 </div>
+             <div class="work3-wrapper">
+              <div class="work9">
+                  <div class="work10">client as a partner</div>
+                  <div class="work11"><img src="assets/img/work2.png"/></div>
+                  <div class="work12">
+                      <div class="work13">clients join the team to help us truly understand their business.</div>
+                      <div class="work14">putting users first transforms client organizations and we work together.</div>
+                  </div>
+              </div>
              </div>
              <hr></hr>
              <div class="work15">

@@ -11,6 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#root {
+  min-width: 1024px;
+}
+
 .header {
   height: 70px;
   display: flex;
@@ -176,65 +181,77 @@ code {
   }
   .serv{
     display:flex;
+    justify-content: center;
   }
   .service1
   {
     background:white;
     width:400px;
     height:550px;
+    margin-left: 24px;
     box-shadow: 0 4px 8px 0 white;
-    margin-left:100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   }
-  .service1 img{
-     margin-left:50px
+  .service1 .service2{
+     display: flex;
+     justify-content: center;
   }
   .service3
   {
     background:white;
     width:400px;
+    z-index: 10;
     height:550px;
     box-shadow: 0 4px 8px 0 white;
-    margin-left:100px;
+    margin:0 -50px;
+    margin-top: 50px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   }
-  .service3 img{
-     margin-left:50px;
-     width : 266px;
+  .service3 .service4{
+      display: flex;
+      justify-content: center;
+  }
+
+  .service4 > img {
+    width : 266px;
      height:189 px;
   }
   .service5
   {
     background:white;
     width:400px;
+    margin-right: 24px;
     height:550px;
     box-shadow: 0 4px 8px 0 white;
-    margin-left:100px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   }
-  .service5 img{
-     margin-left:150px;
-     width : 150px;
-     height: 50 px;
+  .service5 .service6{
+    display: flex;
+    justify-content: center;
+  }
+
+  .service6 > img {
+    width : 150px;
+    height: 50 px;
   }
   .content1
   {
-    margin-left:50px;
-    margin-right:200px;
-    font-size:20px;
+    margin-left: 60px;
+    font-size: 20px;
+    margin-right: 50px;
   }
   .content2
   {
-    margin-left:50px;
-    margin-right:120px;
+    margin-left: 60px;
+    margin-right: 48px;
     
   }
   .content3 div
   {
-    margin-left:50px;
+    margin-left:60px;
     margin-top:20px;
     margin-bottom:20px;
   }
@@ -286,7 +303,7 @@ code {
       .serv14
       {
         display:flex;
-        margin-left: calc(50% - 500px);
+        margin-left: calc(50% - 520px);
         margin-bottom:100px;
       }
       .serv14 div{
@@ -312,16 +329,21 @@ code {
         color:white;
         text-align:center;
       }
+      .work3-wrapper {
+        display: flex;
+        justify-content: center;
+      }
       .work3
       {
         padding-top:60px;
         height: 200px;
+        width: 100%;
         display: flex;
         align-items: center;
-        margin-left: calc(50% - 450px);
       }
-      .work3 div{
-        margin-left:130px;
+      .work3 > div{
+        margin: 0 3%;
+        width: 30%;
         text-align:center;
       }
       .work7
@@ -332,17 +354,21 @@ code {
       {
         padding-top:60px;
         height: 200px;
+        width: 100%;
         display: flex;
         align-items: center;
-       margin-left:480px;
       }
-      .work9 div{
-        margin:0 20px;
-        text-align:justify;
+      .work9 > div{
+        margin:0 3%;
+        width: 30%;
+        text-align:center;
       }
       .work13
       {
        padding-bottom:20px;
+      }
+      .work11 > img {
+        margin-left: 16px;
       }
       .work16
       {
@@ -365,11 +391,14 @@ code {
         margin-left: calc(50% - 350px);
         margin-bottom:100px;
       }
+      .end1 {
+        display: flex;
+        justify-content: center;
+      }
       .end1 img
       {
         margin-top:100px;
         height:300px;
-        margin-left: calc(50% - 200px);
       }
       .socialmedia img{
        height:200px;
@@ -397,6 +426,6 @@ code {
       .socialmedia
       {
        display:flex;
-       margin-left: calc(50% - 300px);
+       justify-content: center;
       }
       
