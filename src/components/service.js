@@ -3,7 +3,7 @@ class Service extends React.Component{
     render(){
       return(
         <>
-        <div class="serv">
+        <div class="serv" id="section">
         <div class="service1">
             <div class="service2"><img src="assets/img/service1.png"/></div>
             <div class="content1"><h5>We turn your ideas into elegant designs</h5></div>
@@ -59,7 +59,7 @@ class Service extends React.Component{
              <div>full fledged</div>
          </div>
          </div>
-         <div class="work">
+         <div class="work" id="section1">
              <div class="work1">How we work</div>
              <div class="work2">small teams working on big challenges in honest collabration with our clients.</div>
              <div class="work3-wrapper">
@@ -75,7 +75,7 @@ class Service extends React.Component{
              <hr></hr>
              <div class="work3-wrapper">
               <div class="work9">
-                  <div class="work10">client as a partner</div>
+                  <div class="work10">client as a <font>partner</font></div>
                   <div class="work11"><img src="assets/img/work2.png"/></div>
                   <div class="work12">
                       <div class="work13">clients join the team to help us truly understand their business.</div>
@@ -98,11 +98,20 @@ class Service extends React.Component{
          <div class="end">
              <div class="end1"><img src="assets/img/logo.png"/></div>
              <div class="socialmedia">
-             <div class="social1"><a href="#"><img src="assets/img/fb2.png"/></a></div>
-             <div class="social2"><a href="#"><img src="assets/img/insta2.png"/></a></div>
+             <div class="social1"><a href="https://www.facebook.com/Bot_in_developers-112716513843094/"><img src="assets/img/fb2.png"/></a></div>
+             <div class="social2"><a href="https://instagram.com/bot_in_developers?igshid=19z2oof0tdm0a"><img src="assets/img/insta2.png"/></a></div>
              <div class="social3"><a href="#"><img src="assets/img/twit2.png"/></a></div>
-             <div class="social4"><a href="#"><img src="assets/img/link2.png"/></a></div>
+             <div class="social4"><a href="#"><img src="assets/img/link5.png"/></a></div>
              </div>
+         </div>
+         <div class="bottom-wrapper">
+         <div class="bottom">
+         <div class="bottom1">All Rights reserved&copy;2020
+         </div>
+         <div class="bottom2">botin developers</div>
+         <div class="bottom3">Contact</div>
+         <div class="bottom4">Privacy</div>
+         </div>
          </div>
 
 

@@ -11,6 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
 
 #root {
   min-width: 1024px;
@@ -400,9 +405,7 @@ code {
         margin-top:100px;
         height:300px;
       }
-      .socialmedia img{
-       height:200px;
-      }
+     
       .social2 img
       {
         width:120px;
@@ -427,5 +430,275 @@ code {
       {
        display:flex;
        justify-content: center;
+       height:200px;
+      }
+      .bottom-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top:-60px;
+      }
+      .bottom
+      {
+        
+        height: 200px;
+       
+        display: flex;
+        align-items: center;
+        
+      }
+      .bottom> div{
+      
+       
+        text-align:center;
+        margin:0 30px;
+      }
+      .con1{
+        font-size:20px;
+      }
+    
+      .text-line
+      {
+        width:300px;
+        height:30px;
+        outline:none;
+        outline-style:none;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:solid rgba(128, 128, 128, 0.623) 1px;
+        padding:3px 10px;
+        color:black;
+      }
+      .text-line1
+      {
+        width:645px;
+        height:30px;
+        outline:none;
+        outline-style:none;
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        border-bottom:solid rgba(128, 128, 128, 0.623) 1px;
+        padding:3px 10px;
+        color:black;
+      }
+      .con2
+      {
+        display:flex;
+        margin-top:50px;
+        
+      }
+      .con2 div{
+        margin-left:25px;
+      }
+      .name3
+      {
+        margin-left:25px;
+        margin-top:30px;
+      }
+     
+      
+      .name4
+      {
+        margin-left:25px;
+        margin-top:30px;
+      }
+      .btn1
+      {
+        margin-top:10px;
+      }
+      .btn2
+      {
+        margin-top:30px;
+        background: white;
+        border: 1px solid #0282fe ;
+        margin-left: auto;
+        margin-right: 16px;
+        border-radius: 40px;
+        padding: 18px 50px;
+        font-size: 12px;
+        cursor: pointer;
+        color: black;
+        font-weight: 200;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin-left:500px;
+        font-size:15px;
+      }
+      .last
+      {
+        margin-top:20px;
+        margin-left:29px;
+      }
+      font
+      {
+        color:#0282fe;
+        background:none;
+      }
+      .dot
+      {
+        border-radius:50%;
+        height:11px;
+        width:13px;
+        background-color:red;
+        display:none;
+        margin-left:-20px;
+      }
+      input:invalid + .dot{
+           display:inline-block;
+      }
+     .menu
+     {
+       display:none;
+     }
+
+     @media only screen and (max-width: 769px) {
+       .menu{
+         display:block;
+       }
+      }
+      @media only screen and (max-width: 769px) {
+        .button-container{
+          display:none;
+        }
+       }
+      .menu i{
+       
+         font-size:30px;
+         color:#0282fe;
+      }
+      .menu{
+        margin-left:800px;
+      }
+      @media only screen and (max-width: 769px) {
+        .contact-us{
+          display:none;
+        }
+       }
+       .navbar {
+        overflow: hidden;
+       
       }
       
+      .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        font-size: 16px;  
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+     
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .aboutb a{
+        text-decoration:none;
+        color:#0282fe;
+      }
+      .serviceb a{
+        text-decoration:none;
+        color:#0282fe;
+      }
+      .homeb a{
+        text-decoration:none;
+        color:#0282fe;
+      }
+      @media only screen and (max-width: 769px) {
+        
+       
+
+    .con1
+    {
+      margin-right:60px;
+    }
+    .con2
+    {
+      display:block;
+    }
+    .con8 div
+    {
+      margin-top:40px;
+    }
+    .text-line{
+    width:200px;
+    height:30px;
+    outline:none;
+    outline-style:none;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:solid rgba(128, 128, 128, 0.623) 1px;
+    padding:3px 10px;
+    color:black;
+    }
+    .text-line1{
+      width:200px;
+      height:30px;
+      outline:none;
+      outline-style:none;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      border-bottom:solid rgba(128, 128, 128, 0.623) 1px;
+      padding:3px 10px;
+      color:black;
+      }
+      .con8  div
+      {
+        margin-left:3px;
+      }
+    
+      .last{
+        margin-left:10px;
+      }
+      .btn2{
+        margin-left:30px;
+        border-radius: 20px;
+        padding: 10px 50px;
+      }
+   
+  }
+  .bt
+  {
+    border: none;
+  }
+    
