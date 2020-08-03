@@ -75,15 +75,15 @@ class Top extends React.Component{
 
 <div className="button-container">
 <button className="home-btn" aria-label="Home">
-<img className="home" src="/assets/img/home.png" alt=""/>
+<img className="home" src="/assets/img/hometop.png" alt=""/>
 <div class="homeb"><a href="Top/">Home</a></div>
 </button>
 <button className="about-btn" aria-label="About">
-<img className="about" src="/assets/img/about.png" alt=""/>
+<img className="about" src="/assets/img/aboutmain.png" alt=""/>
 <div class="aboutb"><a href="#section1">About us</a></div>
 </button>
 <button className="services-btn" aria-label="Our Services">
-<img className="services" src="/assets/img/services.png" alt=""/>
+<img className="services" src="/assets/img/servicemain2.png" alt=""/>
 <div class="serviceb"><a href="#section">Our services</a></div>
 </button>
 </div>
@@ -121,7 +121,7 @@ Contact Us
 
 </header>
 <div className="banner-container">
-<img className="banner" src="/assets/img/homepage.png" alt=""/>
+<img className="banner" src="/assets/img/homey.png" alt=""/>
 </div>
 
 

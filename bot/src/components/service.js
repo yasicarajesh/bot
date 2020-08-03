@@ -98,10 +98,11 @@ class Service extends React.Component{
          <div class="end">
              <div class="end1"><img src="assets/img/logo.png"/></div>
              <div class="socialmedia">
-             <div class="social1"><a href="https://www.facebook.com/Bot_in_developers-112716513843094/"><img src="assets/img/fb2.png"/></a></div>
-             <div class="social2"><a href="https://instagram.com/bot_in_developers?igshid=19z2oof0tdm0a"><img src="assets/img/insta2.png"/></a></div>
-             <div class="social3"><a href="#"><img src="assets/img/twit2.png"/></a></div>
-             <div class="social4"><a href="#"><img src="assets/img/link5.png"/></a></div>
+             <div class="social1"><a href="https://www.facebook.com/Bot_in_developers-112716513843094/"><img src="assets/img/fb7.png"/></a></div>
+             <div class="social3"><a href="#"><img src="assets/img/twit.png"/></a></div>
+             <div class="social2"><a href="https://instagram.com/bot_in_developers?igshid=19z2oof0tdm0a"><img src="assets/img/instade.png"/></a></div>
+            
+             <div class="social4"><a href="#"><img src="assets/img/linkd.png"/></a></div>
              </div>
          </div>
          <div class="bottom-wrapper">
